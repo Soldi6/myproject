@@ -1,0 +1,75 @@
+body {
+        margin: 0;
+        background:
+        url(../../Img/background.jpg);
+        font-family: Gabriola;
+        line-height: 1.5;
+        font-size: 20px;
+
+}
+
+.card {
+        width: 400px;
+        height: 800px;
+        margin: 30px auto;
+        padding: 10px;
+
+        background-color: #d1e3e3;
+        box-shadow: 0 10px 20px red;
+        border-radius: 30px;
+}
+
+.card-photo {
+        display: block;
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        margin: 0 auto;
+        border-radius: 50%;
+
+}
+
+.card-title {
+        text-align: center;
+        background-color: #eec2c2;
+        display: block;
+        outline: 1px solid #000;
+        border-radius: 40%;
+        width: 300px;
+        margin: 0 auto;
+        box-shadow: 0 10px 20px black;
+
+
+}
+
+.card-text {
+        font-size: 24px;
+        line-height: 0.2;
+        padding: 20px 0;
+
+
+
+}
+
+.card-subtitle {
+        font-size: 40px;
+        color: brown;
+        padding-left: 15px;
+        margin: 0;
+
+
+
+}
+
+.card-list {
+        padding-left: 15px;
+        margin: 0;
+        list-style-position: inside;
+        font-size: 20px;
+}
+
+.contacts {
+        padding-left: 20px;
+        line-height: 0.7;
+}
+
