@@ -51,7 +51,7 @@ img {
 ====================================*/
 
 .header {
-    background-image: url("../../Img/Sup surf/header-img.jpg");
+    background-image: url("../Img/Sup surf/header-img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -63,7 +63,7 @@ img {
 .header::before{
     content: "";
     position: absolute;
-    background-image: url("../../Img/Sup surf/header-decor.svg");
+    background-image: url("../Img/Sup surf/header-decor.svg");
     bottom: 0;
     left: 0;
     right: 0;
@@ -78,7 +78,7 @@ img {
 .header::after {
     content: "";
     position: absolute;
-    background-image: url("../../Img/Sup surf/header-decor.svg");
+    background-image: url("../Img/Sup surf/header-decor.svg");
     bottom: 0;
     left: 0;
     right: 0;
@@ -207,7 +207,7 @@ img {
 ====================================*/
 
 .info {
-    background-image: url("../../Img/Sup surf/info-bg.jpg");
+    background-image: url("../Img/Sup surf/info-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -373,7 +373,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../../Img/Sup surf/star.svg");
+    background-image: url("../Img/Sup surf/star.svg");
 }
 
 .buy__btn {
@@ -407,7 +407,7 @@ img {
 }
 
 .technology__top {
-    background-image: url("../../Img/Sup surf/tech-bg.png");
+    background-image: url("../Img/Sup surf/tech-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
