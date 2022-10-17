@@ -201,5 +201,19 @@ body {
 
 
 
+.corusel {
+    background:linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+}
 
-
+.corusel-item {
+    display: none;
+}
+.corusel-item.active {
+    display: block;
+}

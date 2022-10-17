@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="../../Nornalize.css">
+        <link rel="stylesheet" href="../Nornalize.css">
         <title>Notitanic</title>
     </head>
 
@@ -13,7 +13,7 @@
             <div class="container">
                 <nav class="nav">
                      <a class="logo" href="#">
-                        <img class="img-logo" src="../../Img/Notitanic/logo.svg" alt="logo">
+                        <img class="img-logo" src="../Img/Notitanic/logo.svg" alt="logo">
                         <ul class="header-tittle">Notitanic</ul>
                      </a>
                     <ul class="menu">
@@ -50,7 +50,7 @@
                             <a href="#" class="title-btn">Contact me</a>
                         </div>
                         <div class="photo-board">
-                            <img class="home-photo" src="../../Img/Notitanic/Gleb.svg" alt="Gleb">
+                            <img class="home-photo" src="../Img/Notitanic/Gleb.svg" alt="Gleb">
                         </div>
                     </div>
                 </div>
@@ -60,25 +60,25 @@
                 <div class="container">
                         <ul class="skills-list">
 
-                            <li class="skills-item"><img src="../../Img/Notitanic/skill-1.svg" alt="Product Design">
+                            <li class="skills-item"><img src="../Img/Notitanic/skill-1.svg" alt="Product Design">
                                 <h3>Product Design</h3>
                             </li>
-                            <li class="skills-item"><img src="../../Img/Notitanic/skill-2.svg" alt="UX/UI Design">
+                            <li class="skills-item"><img src="../Img/Notitanic/skill-2.svg" alt="UX/UI Design">
                                 <h3>UX/UI Design</h3>
                             </li>
-                            <li class="skills-item"><img src="../../Img/Notitanic/skill-3.svg" alt="Icon Design">
+                            <li class="skills-item"><img src="../Img/Notitanic/skill-3.svg" alt="Icon Design">
                                 <h3>Icon Design</h3>
                             </li>
-                            <li class="skills-item"><img src="../../Img/Notitanic/skill-4.svg" alt="Logo Design">
+                            <li class="skills-item"><img src="../Img/Notitanic/skill-4.svg" alt="Logo Design">
                                 <h3>Logo Design</h3>
                             </li>
-                            <li class="skills-item"><img src="../../Img/Notitanic/skill-5.svg" alt="Backend">
+                            <li class="skills-item"><img src="../Img/Notitanic/skill-5.svg" alt="Backend">
                                 <h3>Backend</h3>
                             </li>
-                            <li class="skills-item"><img src="../../Img/Notitanic/skill-6.svg" alt="Frontend">
+                            <li class="skills-item"><img src="../Img/Notitanic/skill-6.svg" alt="Frontend">
                                 <h3>Frontend</h3>
                             </li>
-                            <li class="skills-item"><img src="../../Img/Notitanic/skill-7.svg" alt="Motion">
+                            <li class="skills-item"><img src="../Img/Notitanic/skill-7.svg" alt="Motion">
                                 <h3>Motion</h3>
 
                             </li>
@@ -88,7 +88,59 @@
             <section class="about-me">
 
             </section>
+
+            <section class="portfolio-corusel-container">
+                <div class="portfolio-corusel">
+                    <button onclick="spinLeft()">←</button>
+                    <ul class="corusel">
+                       <li class="corusel-item active">
+                           <img src="" alt="">
+                           <p class="corusel-item-description"> first</p>
+                       </li>
+                        <li class="corusel-item">
+                            <img src="" alt="">
+                            <p class="corusel-item-description">second</p>
+                        </li>
+                        <li class="corusel-item">
+                            <img src="" alt="">
+                            <p class="corusel-item-description">third</p>
+                        </li>
+                        <li class="corusel-item">
+                            <img src="" alt="">
+                            <p class="corusel-item-description">fourth</p>
+                        </li>
+                    </ul>
+                    <button onclick="spinRight()">→</button>
+                </div>
+            </section>
         </main>
 
+
+        <script lang="js">
+            function spinRight() {
+                let activeItem = document.getElementsByClassName('corusel-item active')[0];
+                let nextActiveItem = activeItem.nextElementSibling;
+
+                if (nextActiveItem === null) {
+                    nextActiveItem = document.getElementsByClassName('corusel-item')[0]
+                }
+
+                activeItem.className = 'corusel-item';
+                nextActiveItem.className = 'corusel-item active';
+            }
+
+            function spinLeft() {
+                let activeItem = document.getElementsByClassName('corusel-item active')[0];
+                let nextActiveItem = activeItem.previousElementSibling;
+
+                if (nextActiveItem === null) {
+                    nextActiveItem = document.getElementsByClassName('corusel-item')[document.getElementsByClassName('corusel-item').length - 1]
+                }
+
+                activeItem.className = 'corusel-item';
+                nextActiveItem.className = 'corusel-item active';
+            }
+
+        </script>
     </body>
 </html>

@@ -126,12 +126,12 @@ img {
     color: #262C27;
 }
 
-.header__phone:hover {
-    transition: 0.3s;
-    font-size: 24px;
-    line-height: 26px;
+/*.header__phone:hover {*/
+/*    transition: 0.3s;*/
+/*    font-size: 24px;*/
+/*    line-height: 26px;*/
 
-}
+/*}*/
 
 .header__content {
     min-height: calc(100vh - 161px);
@@ -272,7 +272,24 @@ img {
     padding-top: 12px;
     display: block;
     color: #FFFFFF;
+    transition: color .3s;
+}
 
+.popup-btn path,
+.popup-btn circle {
+    transition: all .3s;
+}
+
+.popup-btn:hover path {
+    fill: #B9C400;
+}
+
+.popup-btn:hover circle {
+    stroke: #B9C400;
+}
+
+.popup-btn:hover span {
+    color: #0093A1;
 }
 
 .info__btn {
@@ -344,7 +361,7 @@ img {
     margin-bottom: 50px;
 }
 
-.buy__-item {
+.buy__item {
     margin-bottom: 25px;
     width: 285px;
 
@@ -374,6 +391,12 @@ img {
     justify-content: center;
     align-items: center;
     background-image: url("../Img/Sup surf/star.svg");
+    transition: transform .3s;
+    cursor: pointer;
+}
+
+.buy__price:hover {
+    transform: scale(1.3);
 }
 
 .buy__btn {
@@ -544,4 +567,290 @@ img {
 /*FOOTER
 ========================*/
 
+.footer {
+    padding: 100px 0 80px;
+    background-color: #262C27;
+    color: #FFFFFF;
+}
 
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__title {
+    margin-bottom: 27px;
+}
+
+.footer_form {
+    width: 500px;
+}
+
+.footer_form-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 57px;
+    color: #FFFFFF;
+}
+
+.footer_form-input::placeholder {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    opacity: 0.2;
+}
+
+.footer_form-btn {
+    font-family: 'Comfortaa', cursive;
+    background-color: #FFFFFF;
+    padding: 10px 66px;
+    border: none;
+    margin-bottom: 110px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.footer__social-title {
+    margin-bottom: 28px;
+    font-weight: 700;
+}
+
+.footer__gallery {
+    display: grid;
+    gap: 52px;
+    grid-template-columns: repeat(4, 1fr);
+    /*display: flex;*/
+    margin-bottom: 50px;
+}
+
+.footer__menu-list {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.footer__logo {
+    align-self: flex-start;
+}
+
+.footer__logo path {
+    transition: fill .3s;
+}
+
+.footer__logo:hover path {
+    fill: #0093A1;
+}
+
+@media (max-width: 1230px) {
+    .header__decor-text--two {
+        left: 0;
+    }
+    .buy__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .buy__img {
+        order: -1;
+        max-width: 100%;
+    }
+    .buy__content {
+        width: 100%;
+    }
+    .buy__price {
+        pointer-events: none;
+    }
+    .buy__item {
+        width: 100%;
+        max-width: 600px;
+    }
+    .gallery__max {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+    .gallery__max__img {
+        width: 100%;
+        align-self: stretch;
+    }
+    .footer__gallery-item {
+        width: 100%;
+        align-self: stretch;
+    }
+}
+
+@media (max-width: 1175px) {
+    .gallery__box {
+        flex-wrap: wrap;
+    }
+    .gallery__min {
+        margin-top: 0;
+
+    }
+    .gallery__text {
+        width: 100%;
+    }
+    .gallery__min__img {
+        width: 100%;
+        align-self: stretch;
+    }
+    .gallery__min {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .info__top {
+        display: block;
+    }
+    .info__top-text {
+        width: 100%;
+    }
+    .info__top-text--two {
+        padding-bottom: 25px;
+        padding-top: 45px;
+    }
+    .info__top-img {
+        width: 227px;
+        margin: 0 auto;
+        display: block;
+    }
+    .info__specs {
+        display: block;
+    }
+    .footer__top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer__logo {
+        order: -1;
+        margin: 0 auto 50px;
+    }
+    .footer__gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .footer__social-title {
+        text-align: center;
+    }
+    .footer__menu-list {
+        display: block;
+        text-align: center;
+    }
+    .footer_menu-item {
+        margin-bottom: 10px;
+    }
+    
+
+}
+
+@media (max-width: 840px) {
+    .buy__price {
+        bottom: auto;
+        top: -350px;
+    }
+    .gallery__min {
+        margin-bottom: 50px;
+    }
+    .gallery__max__text {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+}
+
+@media (max-width: 720px) {
+    .header__top {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px 90px;
+    }
+    .header__btn {
+        width: 70%;
+    }
+    .header__content-box {
+        margin-right: 0;
+    }
+    .info__top {
+        margin-bottom: 30vh;
+    }
+}
+
+@media (max-width: 630px) {
+
+    .title {
+        font-size: 48px;
+        line-height: 56px;
+    }
+    .info__specs-list {
+        width: 100%;
+    }
+    .info__specs-item {
+        display: block;
+    }
+    .gallery__min {
+        padding: 20px 10px 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .buy__price {
+        width: 170px;
+        height: 168px;
+        background-size: cover;
+        top: -185px;
+    }
+    .technology__btn {
+        right: 90px;
+    }
+
+}
+
+@media (max-width: 414px) {
+    .header__decor-text {
+        display: none;
+    }
+    .header__content {
+        z-index: 5;
+    }
+    .gallery__min::before {
+        display: none;
+    }
+    .gallery__min,
+    .gallery__max {
+        gap: 10px;
+    }
+    .technology__title {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .footer__title {
+        font-size: 34px;
+        line-height: 38px;
+    }
+    .footer__logo svg {
+        width: 90%;
+    }
+}
+
+@media (max-width: 375px) {
+    .header__title {
+        font-size: 55px;
+        line-height: 60px;
+    }
+    .header__content-box {
+        margin-right: 0;
+    }
+    .header__decor-text {
+        display: none;
+    }
+}
