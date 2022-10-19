@@ -202,11 +202,11 @@
             <div class="container">
                 <div class="footer__inner">
                     <div class="footer__top">
-                        <form class="footer__form">
+                        <form class="footer__form" id="feedbackForm" onsubmit="sendContacts(event)">
                             <h3 class="footer__title title">CONTACT US</h3>
-                            <input type="text" class="footer_form-input" placeholder="NAME">
-                            <input type="email" class="footer_form-input" placeholder="E-MAIL">
-                            <button type="submit" class="footer_form-btn">SEND</button>
+                            <input type="text" name="name" class="footer_form-input" placeholder="NAME">
+                            <input type="email" name="email" class="footer_form-input" placeholder="E-MAIL">
+                            <button type="submit" class="footer_form-btn" onclick="">SEND</button>
                         </form>
                         <a class="footer__logo" href="#" >
                             <svg width="371" height="81" viewBox="0 0 371 81" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -244,6 +244,15 @@
             </div>
         </footer>
     </main>
+    <script lang="js">
+        function sendContacts(event) {
+            event.preventDefault();
+            let formData = new FormData(event.target)
+            console.log(Object.fromEntries(formData))
+        }
+
+
+    </script>
 </body>
 </html>
 

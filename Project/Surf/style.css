@@ -595,6 +595,7 @@ img {
     padding: 10px 0;
     margin-bottom: 57px;
     color: #FFFFFF;
+    outline: none;
 }
 
 .footer_form-input::placeholder {
