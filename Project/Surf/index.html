@@ -142,6 +142,16 @@
                             </li>
                         </ul>
                         <button class="buy__btn">buy</button>
+                        <div class="timer-1">
+                            <h1 class="timer__title">У тебя минута , чтобы купить! Скидка 50%!</h1>
+                            <div class="timer__items">
+                                <div class="timer__item timer__days" data-title="Дней">00</div>
+                                <div class="timer__item timer__hours" data-title="Часов">00</div>
+                                <div class="timer__item timer__minutes" data-title="Минут">00</div>
+                                <div class="timer__item timer__seconds" data-title="Секунд">00</div>
+                            </div>
+                            <div class="timer__result"></div>
+                        </div>
                     </div>
                     <img class="buy__img" src="./img/sup-full.jpg" alt="">
                 </div>
@@ -250,9 +260,8 @@
             let formData = new FormData(event.target)
             console.log(Object.fromEntries(formData))
         }
-
-
     </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
 

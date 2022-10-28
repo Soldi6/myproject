@@ -1,0 +1,141 @@
+@media (max-width: 1000px) {
+    .title {
+        font-size: 50px;
+        margin-bottom: 18px;
+    }
+
+    .header__text {
+        font-size: 24px;
+        margin-bottom: 36px;
+    }
+
+    .nav__list {
+        column-gap: 60px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    .slide__title {
+        bottom: 52px;
+        font-size: 72px;
+        background: linear-gradient(90deg, rgba(17,68,86,1) 55px, rgba(255,255,255,1) 55px);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .slide {
+        padding-left: 55px;
+    }
+
+    .case-studies {
+        padding: 70px 0;
+    }
+
+    .video {
+        padding: 70px 0;
+    }
+
+    .footer {
+        padding: 82px 0;
+    }
+
+    .footer__row {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .footer__nav {
+        column-gap: 152px;
+        order: -1;
+    }
+}
+
+@media (max-width: 600px) {
+    .title {
+        text-align: center;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .nav__logo {
+        margin-left: 9px;
+        max-width: 200px;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .nav__btn {
+        display: block;
+        margin-right: 1px;
+    }
+
+    .header__content-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 27px;
+
+        color: rgba(31, 31, 31, 0.7);
+        letter-spacing: 0.06em;
+        font-size: 16px;
+        line-height: 1.5;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .header__content-mobile p {
+        max-width: 237px;
+        text-align: center;
+    }
+
+
+    .header__content {
+        display: none;
+    }
+
+    .header__logo-mobile {
+        width: 244px;
+    }
+
+    .slide__title {
+        left: -24px;
+        bottom: 10px;
+        font-size: 45px;
+        background: linear-gradient(90deg, rgba(17,68,86,1) 34px, rgba(255,255,255,1) 34px);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .slide {
+        padding-left: 10px;
+    }
+
+    .footer {
+        padding: 55px 0;
+    }
+
+    .footer__nav {
+        column-gap: 72px;
+        order: -1;
+    }
+
+
+
+}
+
+@media (max-width: 500px) {
+    .footer__socials {
+        column-gap: 0;
+    }
+    .footer__nav {
+        column-gap: 30px;
+        order: -1;
+    }
+}

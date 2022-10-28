@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invoriem</title>
     <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -19,10 +22,15 @@
                         <li><a class="link" href="#">About us</a></li>
                         <li><a class="btn" href="#">Let’s Talk</a></li>
                     </ul>
+
+                    <button class="nav__btn" id="openMobileNav">
+                        <img src="img/icons/mobile-nav-btn.svg" alt="Mobile nav">
+                    </button>
                 </nav>
             </div>
+
             <div class="header__content">
-                <h1 class="header__title">We build dreams, not just walls</h1>
+                <h1 class="header__title title">We build dreams, not just walls</h1>
                 <div class="header__text">
                     <p>Fulfill your international property developments with us</p>
                 </div>
@@ -30,8 +38,165 @@
                     <a href="#" class="btn btn--big btn--dark">Let’s Talk</a>
                 </div>
             </div>
+
+            <div class="header__content-mobile">
+                <img class="header__logo-mobile" src="./img/logo.svg" alt="logo">
+                <p>We fulfill international property developments</p>
+            </div>
+
+            <a href="#main">
+                <img class="scroll__btn" src="img/icons/header-arrows-desktop.svg" alt="Scroll down">
+            </a>
+
         </div>
     </header>
 
+    <main class="main" id="main">
+        <section class="case-studies">
+            <div class="container">
+                <div class="case-studios__title title">
+                    <h2 class="title">Case Studies</h2>
+                </div>
+                <div class="case-studios__text text">
+                    <p class="text">
+                        We deliver a unique and truly bespoke approach to delivering international developments to market, with over 10 years success around the world.
+                    </p>
+                </div>
+            </div>
+            <div class="container-right owl-carousel owl-theme">
+                <div class="slider">
+                    <div class="slider__item slide">
+                        <h3 class="slide__title">France</h3>
+                        <img class="slide__img" src="./img/slider/slider-01.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="slider__item slide">
+                        <h3 class="slide__title">Moroco</h3>
+                        <img class="slide__img" src="./img/slider/slider-02.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="slider__item slide">
+                        <h3 class="slide__title">Portugal</h3>
+                        <img class="slide__img" src="./img/slider/slider-03.jpg" alt="">
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="slider__item slide">
+                        <h3 class="slide__title">London</h3>
+                        <img class="slide__img" src="./img/slider/slider-04.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--VIDEO-->
+        <section class="video">
+            <div class="container">
+                <div class="video__title title">
+                    <h3>We are Invoriem</h3>
+                </div>
+
+                <div class="video__text text">
+                    <p>We fulfill international property developments</p>
+                </div>
+
+                <div class="video__content">
+                    <div class="video__box video-overlay">
+                        <button class="video__btn" id="video-btn">
+                            <img class="video__play-pic" src="img/icons/play-btn.svg" alt="play">
+                        </button>
+
+                        <img class="video__picture" src="img/video-picture.jpg" alt="">
+                        <video class="video__object" id="video-file" loop>
+                            <source src="img/video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--VIDEO-->
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__copyright">Copyright © 2020 Invoriem</div>
+                <div class="footer__nav">
+                    <div class="footer__email"><a href="mailto:info@invoriem.com">info@invoriem.com</a></div>
+                    <div class="footer__socials">
+                        <a href="#" class="social-icon">
+                            <img src="img/icons/inst.svg" alt="">
+                        </a>
+                        <a href="#" class="social-icon">
+                            <img src="img/icons/facebook.svg" alt="">
+                        </a>
+                        <a href="#" class="social-icon">
+                            <img src="img/icons/twitter.svg" alt="">
+                        </a>
+                        <a href="#" class="social-icon">
+                            <img src="img/icons/linkedIn.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="mobile-nav none" id="mobileNav">
+        <div class="mobile-nav__header">
+            <a href="#">
+                <img src="img/logo.svg" alt="logo" class="mobile-nav__logo">
+            </a>
+
+            <button class="mobile-nav__btn" id="closeMobileNav">
+                <img src="img/icons/mobile-nav-btn.svg" alt="Close nav">
+            </button>
+        </div>
+
+        <nav class="mobile-list">
+                <ul>
+                    <li><a href="#">Hello</a></li>
+                    <li><a href="#">Bonjour</a></li>
+                    <li><a href="#">Olá</a></li>
+                    <li><a href="#">Marhabaan</a></li>
+                </ul>
+        </nav>
+
+        <div class="mobile-contacts">
+            <h4 class="mobile-contacts__title">Contact us</h4>
+            <a class="mobile-contacts__email" href="mailto:info@invoriem.com">info@invoriem.com</a>
+            <a class="mobile-contacts__phone" href="tel:+55512345258">+555 1234 52 58</a>
+            <address class="mobile-contacts__address">
+                3517 W. Gray St.<br>
+                Utica, Pennsylvania<br>
+                57867
+            </address>
+        </div>
+
+        <footer class="mobile-footer">
+            <a class="mobile-footer__email" href="mailto:info@invoriem.com">info@invoriem.com</a>
+            <div class="mobile-footer__socials">
+                <a href="#" class="social-icon">
+                    <img src="img/icons/inst.svg" alt="">
+                </a>
+                <a href="#" class="social-icon">
+                    <img src="img/icons/facebook.svg" alt="">
+                </a>
+                <a href="#" class="social-icon">
+                    <img src="img/icons/twitter.svg" alt="">
+                </a>
+                <a href="#" class="social-icon">
+                    <img src="img/icons/linkedIn.svg" alt="">
+                </a>
+            </div>
+            <p class="mobile-footer__copyright">Copyright © 2020 Invoriem</p>
+        </footer>
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
