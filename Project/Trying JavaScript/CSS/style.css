@@ -1,0 +1,120 @@
+
+
+
+body {
+    background-color: rgba(195, 216, 213, 0.83);
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.images {
+    width: 100%;
+}
+
+.test {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-1,
+.img-2,
+.img-2 {
+    width: 200px;
+    height: 150px;
+}
+
+.img-big {
+    width: 700px;
+    height: 500px;
+}
+
+.btn {
+    margin: 20px;
+    color: #2af62c;
+    background-color: lightslategrey;
+    font-size: 30px;
+    border: 3px solid red;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(33, 25, 153, 0.75);
+    padding: 30px 15px;
+    text-transform: uppercase;
+}
+
+.img-tiny {
+    width: 200px;
+    height: 150px;
+}
+
+.hideDog {
+    display: none;
+}
+
+.showDog {
+    display: block;
+}
+
+.img-3 {
+    display: none;
+}
+
+/*Corusel*/
+
+@keyframes fade {
+    0% { opacity: 1 }
+    50% { opacity: 0 }
+    100% { opacity: 1 }
+}
+
+#gallery {
+    max-width: 640px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.photos {
+
+    margin-bottom: 30px;
+}
+
+#gallery .photos img {
+
+
+    height: 500px;
+    border-radius: 10px;
+    width: 100%;
+    display: none;
+}
+
+#gallery .photos img:first-child {
+    display: block;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.prev,
+.next {
+    width: 100px;
+    background-color: #b9a2a2;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #86f62a;
+    cursor: pointer;
+}
+
+
+

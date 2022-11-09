@@ -1,0 +1,229 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Nico Moji";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Nico Moji");
+local(NicoMoji-Regular)
+
+}
+
+body {
+    margin: 0;
+
+
+    background: linear-gradient(101.56deg, #2C2C2C 1.56%, #1C1C1C 95.55%);
+    color: #FFFFFF;
+
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+li {
+    text-decoration: none;
+
+}
+
+ul {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+
+/*CONTAINER
+========================*/
+
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+
+/*HEADER
+=========================*/
+
+.header {
+    padding-top: 30px;
+
+}
+.header-tittle {
+    margin-left: 10px;
+    line-height: 18px;
+    font-family: "Nico Moji";
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item {
+    padding-left: 145px;
+}
+.menu-item:first-child {
+    padding-left: 0;
+}
+.menu-item:last-child {
+    padding-right: 92px;
+}
+
+
+.menu-link {
+    line-height: 21px;
+    color: #E4E4E4;
+    border-bottom: 2px black;
+
+}
+.menu-link:hover {
+    text-decoration: underline 1px #E2A300;
+
+}
+/*MAIN
+========================*/
+
+.main {
+
+}
+
+/*HOME
+===============================*/
+.headline {
+
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.photo-board {
+    padding-top: 32px;
+    width: 632px;
+    height: 674px;
+}
+.home-photo {
+    width: 632px;
+    height: 674px;
+
+}
+
+.title {
+    width: 377px;
+    /*font-family: NEXT ART;*/
+    padding-top: 194px;
+    color: #E4E4E4;
+}
+
+.title-text {
+    margin: 0 0 27px;
+    font-size: 72px;
+    line-height: 81px;
+    font-weight: 700;
+}
+.title-text-2 {
+    font-size: 48px;
+    line-height: 54px;
+    font-weight: 600;
+    margin-bottom: 27px;
+
+}
+.title-text-3 {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 300;
+    margin-bottom: 27px;
+}
+
+.title-btn {
+    padding: 14px 38px 13px 41px;
+    background: linear-gradient(87.32deg, #E2A300 4.47%, #E29500 95.53%);
+    box-shadow: 0 2px 13px rgba(226, 158, 0, 0.48);
+    border-radius: 6px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 20px;
+    display: inline-block;
+}
+/*SKILLS
+========================*/
+ .skills {
+     background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+ }
+
+.skills-list {
+
+    width: 1180px;
+    height: 600px;
+    padding-top: 113px;
+    padding-bottom: 136px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-flow: row wrap;
+
+}
+
+.skills-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    height: 270px;
+    background: #2A2A2A;
+    box-shadow: 0 4px 6px rgb(0 0 0 / 47%);
+    border-radius: 29px;
+    justify-content: space-evenly;
+}
+
+
+
+.corusel {
+    background:linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.corusel-item {
+    display: none;
+}
+.corusel-item.active {
+    display: block;
+}

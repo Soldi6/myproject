@@ -55,5 +55,5 @@ document.addEventListener('DOMContentLoaded', () => {
         elMinutes1.dataset.title = timer.minutesTitle;
         elSeconds1.dataset.title = timer.secondsTitle;
     }, () => {
-        document.querySelector('.timer-1 .timer__result').textContent = 'Ебать ты лох! Проебал минуту жизни!';
+        document.querySelector('.timer-1 .timer__result').textContent = 'Извините , Вы не успели ';
     });})

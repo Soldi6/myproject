@@ -1,0 +1,428 @@
+body {
+    margin: 0;
+
+    height: 4759px;
+    width: 100%;
+
+    left: 0;
+    top: 0;
+    border-radius: 0;
+
+    font-family: "Gilroy-Regular ☞", sans-serif;
+    font-size: 18px;
+    text-align: left;
+    color: #070707;
+    background-color: #FFFFFF;
+
+}
+*,
+*:before,
+*:after {
+
+    /*box-sizing: border-box;*/
+}
+
+/* CONTAINER
+====================*/
+.container {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+/* HEADER
+=====================*/
+
+.header {
+
+
+}
+.header__inner {
+    display: block;
+    border-bottom: 1px solid #828282;
+    padding: 33px 0;
+    align-items: center;
+}
+/*NAVIGATION
+==================*/
+.nav {
+    font-size: 18px;
+    display: flex;
+    font-weight: 700;
+    justify-content: space-between;
+
+}
+.nav__link {
+    color: #828282;
+    text-decoration: none;
+
+    transition: color 0.2s;
+
+}
+
+.nav__link:hover {
+    color: #070707;
+
+}
+
+/*INTRO
+================*/
+.container-intro {
+    width: 100%;
+    display: flex;
+    max-width: 950px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.intro {
+    font-family: inherit;
+
+    font-size: 48px;
+    line-height: 58px;
+    width: 123px;
+    height: 118px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+}
+.intro-2 {
+    font-size: 18px;
+    line-height: 22px;
+    width: 156px;
+    height: 44px;
+    margin-bottom: 49px;
+    margin-top: 94px;
+
+}
+
+.intro-3 {
+    color: #6c7279;
+    margin-top: 69px;
+    margin-bottom: 53px;
+    width: 65px;
+    height: 20px;
+    font-family: inherit;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    text-decoration: none;
+}
+.intro-3:hover {
+    color: #070707;
+}
+.button-language {
+    color: #6c7279;
+    margin-top: 69px;
+    margin-bottom: 53px;
+    width: 65px;
+    height: 20px;
+    font-family: inherit;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    text-decoration: none;
+
+}
+.button-language:hover {
+    color: #070707;
+    transition: color 0.2s;
+
+}
+
+.main-photo {
+    padding-bottom: 104px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 950px;
+    height: 387px;
+
+
+}
+
+/*MAIN
+=======================================*/
+
+.main {
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    height: 506px;
+    background: #F6F6F6;
+    text-align: center;
+
+
+}
+
+.main-title {
+    width: 160px;
+    height: 43px;
+    margin: 0 auto;
+    padding-top: 120px;
+    font-family: inherit;
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+
+}
+
+.main-text-window {
+    margin: 0 auto;
+    width: 490px;
+    height: 218px;
+
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.text {
+    margin: 0 auto;
+    padding-top: 18px;
+    padding-left: 0;
+}
+/*SKILLS
+=========================*/
+.skills {
+    margin: 0 auto;
+    padding-top: 216px;
+
+    font-size: 34px;
+    line-height: 42px;
+
+    width: 100%;
+    max-width: 1445px;
+    height: 506px;
+}
+
+.skills-title {
+
+
+
+}
+
+.skills-text {
+    margin-top: 69px;
+    margin-bottom: 83px;
+    padding-left: 0;
+    color: #070707;
+
+    font-size: 18px;
+    line-height: 22px;
+
+}
+
+.skills-icon {
+    display: flex;
+    margin-left: 255px;
+    margin-right: 252px;
+    justify-content: space-between;
+    color: #6c7279;
+    font-size: 14px;
+    line-height: 17px;
+
+}
+
+.adobe-photoshop {
+    width: 166px;
+    height: 206px;
+}
+
+.adobe-illustrator {
+    width: 166px;
+    height: 206px;
+
+}
+
+.adobe-aftereffects {
+    width: 166px;
+    height: 206px;
+
+}
+
+.figma {
+    width: 166px;
+    height: 206px;
+
+}
+/*PORTFOLIO
+=======================*/
+.portfolio-window {
+    font-size: 34px;
+    line-height: 42px;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    height: 2253px;
+    background: #F6F6F6;
+    text-align: center;
+}
+
+.portfolio-title {
+    padding-top: 112px;
+
+}
+
+.portfolio-Photo-1 {
+    padding-top: 47px;
+    margin: 0 auto;
+    width: 937px;
+    height: 510px;
+}
+
+.fashion-title {
+    margin: 0 auto;
+    color: #070707;
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 44px;
+    padding-bottom: 99px;
+    text-decoration: underline;
+}
+
+.fashion-url {
+    color: #070707;
+
+}
+
+
+.portfolio-Photo-2 {
+    margin: 0 auto;
+    width: 938px;
+    height: 522px;
+
+}
+
+.reebok-title {
+    margin: 0 auto;
+    color: #070707;
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 44px;
+    padding-bottom: 99px;
+    text-decoration: underline;
+
+}
+.reebok-url {
+    color: #070707;
+
+}
+
+.portfolio-Photo-3 {
+    margin: 0 auto;
+    width: 937px;
+    height: 522px;
+
+}
+
+.braun-title {
+    margin: 0 auto;
+    color: #070707;
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 44px;
+    padding-bottom: 99px;
+    text-decoration: underline;
+}
+.braun-url {
+    color: #070707;
+
+}
+/*FOOTER
+========================*/
+
+.footer {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1445px;
+    height: 622px;
+
+}
+
+.contacts {
+    padding-top: 114px;
+    padding-bottom: 20px;
+    font-size: 34px;
+    line-height: 42px;
+}
+
+.contacts-text {
+    font-size: 18px;
+    line-height: 22px;
+
+}
+
+.send-message {
+    margin: 0 auto;
+    width: 180px;
+    height: 42px;
+    padding-top: 42px;
+    padding-bottom: 86px;
+}
+
+.button-send {
+    margin: 0 auto;
+    border-radius: 50px;
+    width: 180px;
+    height: 43px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background-color: black;
+
+}
+
+.button-send:hover {
+    background-color: #828282;
+}
+
+.link__icons {
+    width: 342px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 45px;
+    opacity: 1;
+}
+
+.in__icon{
+    width: 41px;
+    height: 41px;
+}
+.in__icon:hover {
+    opacity: 0.4;
+}
+
+.inst__icon {
+    width: 41px;
+    height: 41px;
+}
+.inst__icon:hover {
+    opacity: 0.4;
+}
+
+.be__icon {
+    width: 41px;
+    height: 41px;
+}
+.be__icon:hover {
+    opacity: 0.4;
+}
+
+.ball__icon {
+    width: 41px;
+    height: 41px;
+
+
+}
+.ball__icon:hover {
+    opacity: 0.4;
+}
+
+.ending {
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+}
+
+
+
